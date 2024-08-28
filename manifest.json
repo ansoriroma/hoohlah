@@ -1,0 +1,23 @@
+{
+    "manifest_version": 3,
+    "name": "MidJourney API Request",
+    "version": "1.0",
+    "description": "A Chrome extension to perform a CURL-like API request with cookies.",
+    "permissions": [
+      "cookies",
+      "activeTab",
+      "storage",
+      "webRequest",
+      "tabs"
+    ],
+    "host_permissions": [
+      "*://*.midjourney.com/*"
+    ],
+    "background": {
+      "service_worker": "background.js"
+    },
+    "action": {
+      "default_popup": "popup.html"
+    }
+  }
+  
